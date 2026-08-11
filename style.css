@@ -9,12 +9,14 @@ body{
 }
 
 header{
-    background-color: yellowgreen;
+    background-color: rgb(80, 147, 202);
     color: beige;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 15px 30px;
 }
 
 nav ul{
@@ -22,4 +24,59 @@ nav ul{
 
     display: flex;
     gap: 20px;
+}
+
+nav a{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+nav a:hover{
+    color: dodgerblue;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+nav ul{
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+main{
+    max-width: 80%;
+    background-color: rgb(121, 136, 136);
+    color: bisque;
+    padding: 3em 2em;
+    line-height: 2.0;
+
+    display: block;
+    margin: auto;
+    font-family: sans-serif;
+
+    border-radius: 2em;
+}
+
+main p{
+    margin: 2em 0;
+    text-align: center;
+    font-size: 17px;
+
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        font-size: 22px;
+    }
 }
